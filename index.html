@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +9,16 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
-    <div class="container">
+    <header>
+        <img class="logo" src="img/Logo.png" alt="logo">
+    </header>
+    <main class="container">
         <div class="encriptar">
             <textarea name="texto" class="texto" id="texto" cols="30" rows="10"
-                placeholder="Ingresa el texto"></textarea>
+                placeholder="Ingresa el texto aquí"></textarea>
         </div>
         <div class="terminos">
+            <img src="img/alerta.svg" alt="alerta"> 
             <p>Solo letras minusculas y sin acéntos</p>
         </div>
         <div class="botones">
@@ -22,14 +26,24 @@
             <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()">
         </div>
         <div class="encriptado">
+
             <img src="img/Muñeco.png" alt="" id="viñeta">
+
             <div class="mensaje-encriptado" id="mensaje-encriptado">
-                <h2 id="titulo-mensaje">Ningun mensaje encontrado</h2>
+                <h2 id="titulo-mensaje">Ningún mensaje encontrado</h2>
                 <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
-                <!--<textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>-->
+                
             </div>
+            <div class="contenedor-copiar">
+                <input type="button" class="btn-copiar" value="Copiar">
+            </div>
+            <div class="contenedor-resultado">
+                <p class="texto-resultado"></p>
+            </div>
+            
+
         </div>
-    </div>
+    </main>
 </body>
 <script src="funcion.js"></script>
 
